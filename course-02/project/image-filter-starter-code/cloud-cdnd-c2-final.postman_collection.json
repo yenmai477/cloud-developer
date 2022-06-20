@@ -1,63 +1,41 @@
 {
+	"variables": [],
 	"info": {
-		"_postman_id": "4bcf1909-8996-44b7-be35-b130ab03d12f",
 		"name": "cloud-cdnd-c2-final",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"_postman_id": "e870e682-c99d-27ee-895b-5d66a524e38e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "http://localhost:8082/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
 			"request": {
-				"method": "GET",
-				"header": [],
 				"url": {
-					"raw": "http://{{HOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+					"raw": "http://{{HOST}}:{{PORT}}/filteredimage?image_url=https://www.udacity.com/blog/wp-content/uploads/2020/10/Udacity-Logo_Blue-1.png",
 					"protocol": "http",
 					"host": [
 						"{{HOST}}"
 					],
+					"port": "{{PORT}}",
 					"path": [
 						"filteredimage"
 					],
 					"query": [
 						{
 							"key": "image_url",
-							"value": "https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg"
+							"value": "https://www.udacity.com/blog/wp-content/uploads/2020/10/Udacity-Logo_Blue-1.png",
+							"equals": true,
+							"description": ""
 						}
-					]
-				}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
 			},
 			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"id": "5887df52-1889-4e1f-82ee-054ab37b450a",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"id": "5e332dfe-c833-430b-b947-ab6c00311c28",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"id": "1df3d31a-de30-494b-a3d0-f1228dd8713c",
-			"key": "HOST",
-			"value": "localhost:8082",
-			"type": "string"
 		}
 	]
 }

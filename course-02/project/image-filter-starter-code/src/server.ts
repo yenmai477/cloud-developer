@@ -51,7 +51,7 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
         // 4. deletes any files on the server on finish of the response
         deleteLocalFiles([filteredImagePath]);
       });
-    } catch ({ message }: any) {
+    } catch ({ message }) {
       res.status(422).json({ message });
     }
   });
